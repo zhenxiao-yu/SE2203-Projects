@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="1030.0" style="-fx-background-image: url(&quot;file:src/iPublisher/WesternBackground.png&quot;);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="iPublisher.MainController">
+    <top>
+        <MenuBar fx:id="mainMenu" BorderPane.alignment="CENTER">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Manage iPublisher Records">
+               <items>
+                  <Menu mnemonicParsing="false" text="Add New">
+                    <items>
+                              <MenuItem mnemonicParsing="false" onAction="#showAddNewPublisherUnit" text="Publisher Unit" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAddNewAuthor" text="Author" />
+                        <MenuItem mnemonicParsing="false" onAction="#showAddNewTitle" text="Title" />
+                    </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Edit/Delete">
+                    <items>
+                      <MenuItem mnemonicParsing="false" onAction="#showEditDeletePublisherUnit" text="Publisher Unit" />
+                        <MenuItem mnemonicParsing="false" onAction="#showEditDeleteAuthor" text="Author" />
+                        <MenuItem mnemonicParsing="false" onAction="#showEditDeleteTitle" text="Title" />
+                    </items>
+                  </Menu>
+               </items></Menu>
+                <Menu mnemonicParsing="false" text="Maintain Revenues records" />
+                <Menu mnemonicParsing="false" text="Generate iPublisher Reports" />
+                <Menu mnemonicParsing="false" text="Review Annual/SemiAnnual Business Performance" />
+                <Menu mnemonicParsing="false" text="About">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About Us" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </top>
+</BorderPane>
