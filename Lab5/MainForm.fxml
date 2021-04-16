@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="727.0" prefWidth="1030.0" style="-fx-background-image: url(&quot;file:src/TennisBallGames/WesternBackground.png&quot;);" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TennisBallGames.Controller">
+   <top>
+      <MenuBar fx:id="mainMenu" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#resetDB" text="Begin New Season" />
+              <MenuItem mnemonicParsing="false" onAction="#exit" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="View">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showTeamsstandings" text="Team Standings" />
+                  <MenuItem mnemonicParsing="false" onAction="#showMatches" text="Matches" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Add">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#addTeam" text="Team" />
+                  <MenuItem mnemonicParsing="false" onAction="#addMatch" text="Match" />
+                  <MenuItem mnemonicParsing="false" onAction="#addScore" text="Scores" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="About">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About Us" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

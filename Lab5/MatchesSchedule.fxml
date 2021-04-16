@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0" prefWidth="685.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TennisBallGames.MatchesScheduleController">
+   <center>
+      <TableView fx:id="tableView" prefHeight="318.0" prefWidth="470.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="matchNumberCol" prefWidth="121.0" text="Match Number">
+              
+          </TableColumn>
+          <TableColumn fx:id="homeTeamCol" prefWidth="153.0" text="Home Team">
+              
+          </TableColumn>
+            <TableColumn fx:id="homeScoreCol" prefWidth="106.0" text=" Home Score" />
+            <TableColumn fx:id="visitorTeamCol" prefWidth="166.0" text="Visitor Team">
+              
+          </TableColumn>
+            <TableColumn fx:id="visitorScoreCol" prefWidth="99.0" text="Visitor Score" />
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="30.0" />
+         </BorderPane.margin>
+      </TableView>
+   </center>
+   <top>
+      <Label alignment="TOP_CENTER" prefHeight="22.0" prefWidth="550.0" style="-fx-font-size: 15; -fx-font-weight: bold;" text="List of matches and scores" textAlignment="CENTER" textFill="#f20202" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+      </Label>
+   </top>
+</BorderPane>
