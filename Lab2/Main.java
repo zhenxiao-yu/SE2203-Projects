@@ -1,4 +1,4 @@
-package HelloWorld;
+package SampleHandler;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,16 +10,15 @@ public class Main extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception{
-        //load the FXML file
-        Parent root = FXMLLoader.load(getClass().getResource("HelloWorld.fxml"));
-        primaryStage.setTitle("Hello World");
-        //builds the scene graph in memory
-        primaryStage.setScene(new Scene(root, 300, 275));
-        //displays the GUI
+        Parent root = FXMLLoader.load(getClass().getResource("SampleHandler.fxml"));
+        //set the title of the application
+        primaryStage.setTitle("SampleHandler");
+        //set the size of the window
+        primaryStage.setScene(new Scene(root, 700, 500));
         primaryStage.show();
     }
 
-    //application main method
+
     public static void main(String[] args) {
         launch(args);
     }
