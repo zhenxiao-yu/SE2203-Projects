@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BeautifulFlowers.BeautifulFlowersController">
+   <children>
+      <RadioButton fx:id="roseRadioButton" layoutX="16.0" layoutY="72.0" mnemonicParsing="false" onAction="#roseRadioButtonListener" prefHeight="17.0" prefWidth="68.0" selected="true" text="Rose">
+         <toggleGroup>
+            <ToggleGroup fx:id="flowersToggleGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="callaLilyRadioButton" layoutX="16.0" layoutY="97.0" mnemonicParsing="false" onAction="#callaLilyRadioButtonListener" text="Calla Lily" toggleGroup="$flowersToggleGroup" />
+      <RadioButton fx:id="cannaRadioButton" layoutX="16.0" layoutY="124.0" mnemonicParsing="false" onAction="#cannaRadioButtonListener" prefHeight="17.0" prefWidth="68.0" text="Canna" toggleGroup="$flowersToggleGroup" />
+      <RadioButton fx:id="bleedingHeartRadioButton" layoutX="16.0" layoutY="151.0" mnemonicParsing="false" onAction="#bleedingHeartRadioButtonListener" text="Bleeding Heart" textAlignment="JUSTIFY" toggleGroup="$flowersToggleGroup" />
+      <RadioButton fx:id="cherryBlossomRadioButton" layoutX="16.0" layoutY="176.0" mnemonicParsing="false" onAction="#cherryBlossomRadioButtonListener" text="Cherry Blossom" toggleGroup="$flowersToggleGroup" />
+      <ImageView fx:id="flowersImageView" fitHeight="300.0" fitWidth="300.0" layoutX="141.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Rose.gif" />
+         </image>
+      </ImageView>
+      <Label fx:id="flowersNote" layoutX="456.0" layoutY="35.0" prefHeight="300.0" prefWidth="140.0" text="This beautiful flower and symbol of love belongs the genus Rosa. The family name of this floweris Rosaceae and it contains different other species in almost all parts of the world. The flower ofrose vary in size from each other depending upon the species to which they belong. A largenumber of species of this flower are found in different parts of Asia." textAlignment="JUSTIFY" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
